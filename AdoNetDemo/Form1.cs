@@ -24,11 +24,11 @@ namespace AdoNetDemo
         }
         public void LoadProducts()
         {
-            dgvProducts.DataSource = _productDal.GetAll();
+            dgvProducts.DataSource = _productDal.GetAll_SP();
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _productDal.Add(new Product
+            _productDal.Add_SP(new Product
             {
                 Name = txtName.Text,
                 UnitPrice = Convert.ToDecimal(txtUnitPrice.Text),
