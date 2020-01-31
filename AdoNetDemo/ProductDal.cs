@@ -10,7 +10,7 @@ namespace AdoNetDemo
 {
     public class ProductDal //Açılımı Dal-> Data Accsess Layer
     {
-        //_connetion'un başına _ koyduk blobal olduğunu ya da dışarda olduğunu belitmek için.
+        //_connetion'ın başına _ koyduk global olduğunu ya da dışarıda olduğunu belirtmek için.
         SqlConnection _connection = new SqlConnection("Server=.;Database=eTrade;Trusted_Connection=True;");
         public void ConnetionControl()
         {
